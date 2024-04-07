@@ -30,7 +30,7 @@ public class AddEmployee {
 
 		addEmployee.addEmployee(new Employee(1, "Sana", "Delhi"));
 		addEmployee.addEmployee(new Employee(2, "Vishal", "Patna"));
-		addEmployee.addEmployee(new Employee(3, "Pince", "Trupathi"));
+		addEmployee.addEmployee(new Employee(3, "Prince", "Tirupathi"));
 		addEmployee.addEmployee(new Employee(4, "Latha", "Srinagar"));
 		addEmployee.addEmployee(new Employee(5, "Lisa", "Hyderabad"));
 		
