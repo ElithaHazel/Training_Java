@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="/assignment1.css">
+    <script src="/assignment1.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Presenting the User Case</h1>
+    <hr/>
+    </div>
+    
+    <div class="container">
+        <h3>Add the Customer Details</h3>
+        <form id="customerForm">
+            <div class="form-group">
+                <div class="form-tab">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Name" required>
+                </div>
+
+                <span class="error" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-tab">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Email"required>
+                </div>
+                <span class="error" id="emailError"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-tab">
+                    <label for="contactNo">Contact No:</label>
+                    <input type="text" id="contactNo" name="contactNo" placeholder="Enter Contact Number" maxlength="10">
+                </div>
+                <span class="error" id="contactNoError"></span>
+            </div>
+            <div class="form-group">
+                <div class="form-tab">
+                    <label for="accountType">Account Type:</label>
+                    <select id="accountType" name="accountType" required>
+                        <option value="">Select Account Type</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Current">Current</option>
+                        <option value="Business">Business</option>
+                    </select>
+                </div>
+                <span class="error" id="accountTypeError"></span>
+            </div>
+            <button type="button" onclick="addCustomer()">Add Customer</button>
+        </form>
+        <table id="customerTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Contact No</th>
+                    <th>Account Type</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</body>
+</html>
