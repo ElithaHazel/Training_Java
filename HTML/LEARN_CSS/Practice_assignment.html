@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENTIRE PROFILE</title>
+    <style>
+    .profile-card
+    {
+        display: grid;
+        width: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    .card-header
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 480px) {
+        .card-header {
+        flex-direction: column;
+        }
+    }
+    @media (max-width: 786px) {
+        .card-header {
+        flex-direction: column;
+        }
+    }
+    .a{
+        display: flex;
+    }
+    .profile-image{
+        justify-self: flex-start;
+        padding: 20px;
+        margin: 10px;
+        margin-left: 40px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .profile-info{
+        padding-top: 22px;
+        margin:10px;
+    }
+    .edit-profile input{
+        padding: 10px;
+        margin: 30px;
+        margin-top: 40px;
+        border-radius: 5px;
+    }
+    .card-section{
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+    }
+    @media (max-width: 480px) {
+        .card-section {
+        flex-direction: column;
+        }
+    }
+    @media (max-width:768px){
+            .card-section{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            }
+    }
+    .stat-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 27px;
+    }
+    .number{
+        font-size: larger;
+    }
+    .description{
+        font-size: medium;
+    }
+    
+    .card-actions{
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width:768px){
+        .card-actions{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    @media (max-width:480px){
+        .card-actions{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+    }
+    .card-actions input{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    </style>
+</head>
+ 
+<body>
+    <div class="profile-card">
+        <div class="card-header">
+            <div class="a">
+                <div class="profile-image">
+                    <img src="https://soc-core-testing.s3.ap-south-1.amazonaws.com/avatar.png" alt="Profile Image">
+                </div>
+ 
+                <div class="profile-info">
+                    <p> <span style="font-size: x-large;"> <b> Jane Deo </b> </span> <br> Graphic Designer </p>
+                </div>
+            </div>
+            <div class="b">
+                <div class="edit-profile">
+                    <input type="button" value="Edit Profile">
+                </div>
+        </div>
+        </div>
+ 
+        <div> <hr> </div>
+ 
+        <div>
+            <ul class="card-section">
+ 
+                <li class="stat-item">
+                <span class="number"><b> 24 </b></span>
+                <span class="description">Images</span>
+                </li>
+ 
+                <li class="stat-item">
+                    <span class="number"><b> 420 </b></span>
+                    <span class="description">Posts</span>
+                </li>
+ 
+                <li class="stat-item">
+                <span class="number"><b> 2.7k </b></span>
+                <span class="description">Followers</span>
+                </li>
+ 
+                <li class="stat-item">
+                <span class="number"><b> 2.7k </b></span>
+                <span class="description">Following</span>
+                </li>
+                </ul>
+        </div>
+ 
+        <div> <hr> </div>
+       
+        <div class="card-actions">
+           <input type="button" value="Message">
+           <input type="button" value="Follow" style="background-color: rgb(113, 228, 113); border: rgb(113, 228, 113) ; color: white;">
+        </div>
+    </div>
+ 
+</body>
+</html>

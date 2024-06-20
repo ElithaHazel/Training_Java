@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: pink;
+    font-size: 16px;
+    line-height: 1.5em;
+}
+
+.grid-container{
+    /* Initial setting START */
+    max-width: 960px;
+    margin: 100px auto;
+    padding: 10px;
+    display: grid;
+    /* Initial setting END */
+}
+.item{
+    background-color: plum;
+    color:rgb(138, 3, 138);
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid red;
+}
+
+/* Grid container(display:grid) and have to define the rows or columns */
+.grid-container{
+    display: grid;
+    /* grid-template-columns: 100px 200px 300px; */
+    /* grid-template-columns: 30% 40% 30%; */
+    /* ABOUT %
+    incase of % the total sum must be 100 to occupy full width.
+    if we give total sum less than 100 it won't occupy full width
+    */
+    /*  ABOUT FRACTIONS
+    but in case of fraction its not like %
+    it occupies the entire width and then divides based on fraction
+    */
+    /* grid-template-columns: 1fr 3fr 2fr; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(3,1fr); */
+    /* grid-template-columns: repeat(2,2fr) 4fr; */
+    
+}
+
+.grid-container{
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    /* if same gap for both row and col use just 'gap' */
+    gap:10px;
+}
+
+/* to OVERRIDE the default behaviour(i.e,height of items based on content) */
+.grid-container{
+    /* grid-auto-rows: 250px; */
+    /* based on the content it gives priority and considers the height */
+    /* grid-auto-rows: minmax(100px,300px); */
+    /* grid-auto-rows:minmax(150px,auto); */
+}
+
+.grid-container{
+    /* grid-template-rows: 200px 100px 200px; */
+    /* or */
+    /* grid-template-rows: 1fr 1fr 1fr; */
+    /* or */
+    grid-template-rows: repeat(3,1fr);
+}
+
+/* GRID BROWSER TOOLS 
+ ********************************
+in debugger,element tab click on grid button
+if you don't  see grids go to the layout tab & check all options
+ */
+
+ /* align items for-> y-axis */
+.grid-container{
+    /* stretch is the default property */
+    /* align-items:stretch; */
+    /* align-items: center; */
+}
+
+/* justify content for -> x-axis */
+.grid-container{
+    justify-content: center;
+    /* grid-template-columns: repeat(3,200px); */
+}
+
+.grid-container{
+    grid-template-columns: repeat(3,1fr);
+}
+/* .item:nth-of-type(2){
+    align-self: start;
+    justify-self: center;
+    width: 100px;
+    height: 100px;
+} */
+
+/* col-span */
+/* .item:nth-of-type(1){
+    background-color: aqua;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    or
+    grid-column: 1/3;
+} */
+/* row-span */
+/* .item:nth-of-type(3){
+    background-color: yellow;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    or
+    grid-row:2/4;
+} */
+
+@media (max-width:500px){
+    .grid-container{
+        background-color: crimson;
+        grid-template-columns: 1fr;
+    }
+}

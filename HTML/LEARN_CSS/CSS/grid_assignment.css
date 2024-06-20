@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 80px 100px 1fr;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-areas:
+    "header1 header1 header1"
+    "header2 header2 header2"
+    "sidebar1 main1 sidebar2";
+}
+#header-1,#header-2,#sidebar-1,main,#sidebar-2{
+    border: 1px solid black;
+}
+
+#header-1{
+    grid-area: header1;
+}
+#header-2{
+    grid-area: header2;
+}
+#aside-1{
+    grid-area: sidebar1 ;
+}
+main{
+    grid-area: main1;
+}
+#aside-2{
+    grid-area: sidebar2 ;
+}
+

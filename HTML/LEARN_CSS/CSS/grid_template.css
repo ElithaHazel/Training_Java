@@ -1,0 +1,262 @@
+/* *{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h1{
+    color: cornflowerblue;
+}
+.nav{
+    background-color: black;
+    color: white;
+   
+}
+.nav-ul li{
+    list-style: none;
+    display: inline-flex;
+    padding: 20px 30px;
+}
+.nav-div{
+    background-color: green;
+    height: 80px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto;
+    border: 2px solid grey;
+    width: 80%;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.grid-1{
+    list-style: none;
+    display: grid;
+    grid-template-columns: auto ;
+    border: 1px solid grey;
+    padding: 12px;
+}
+.grid-1b{
+    background-color: rgb(185, 183, 183);
+}
+#btn{
+    width: 20%;
+    margin: 10px;
+}
+#grid-2{
+    color: rgb(211, 19, 19);
+    border: 1px solid rgb(244, 174, 197);
+    background-color: rgb(244, 174, 197);
+    padding: 10px;
+    border-radius: 5px;
+}
+.img{
+    height: 120px;
+    width: 120px;
+}
+.grid-3{
+    display: inline-flex;
+}
+.inside-grid{
+    width: 50%;
+    padding: 0px 30px;
+}
+.grid-block{
+    display: grid;
+    grid-template-columns: 35% 70%;
+} */
+*{
+    margin:0px;
+    box-sizing: border-box;
+}
+ 
+button{
+    margin-right: 10px;
+    border-radius: 8px;
+    background-color: rgba(194, 186, 186, 0.205);
+}
+.section1{
+    background-color: black;
+    color:white;
+    display: flex;
+    height:60px;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+ 
+.section1-flex-left{
+    display: flex;
+    /* justify-content: space-evenly; */
+    padding-left: 140px;
+}
+ 
+.section1-flex-right{
+    padding-left: 200px;
+}
+ 
+.section2{
+    width:100%;
+    height:150px;
+    background-color: rgb(18, 231, 18)
+}
+ 
+.section3-left-p1{
+    border: 2px solid gray;
+    width:300px;
+    border-radius: 5px;
+    margin: 15px;
+    /* padding-left: 20px; */
+}
+ 
+.section3-left-p1-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+.section3-left-p2{
+    border: 2px solid gray;
+    width:300px;
+    border-radius: 5px;
+    margin: 15px;
+}
+ 
+.section3-middle-p1{
+    height:40px;
+    width:550px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    background-color: rgb(234, 202, 190);
+    padding: 10px;
+    margin: 10px;
+   
+}
+ 
+.section3-middle-p2{
+    /* display: flex; */
+    width: 550px;
+    height: 140px;
+    border-bottom: 0.5px solid gray;
+    margin: 10px;
+    padding: 20px;
+}
+ 
+.section3-middle-p2-top{
+    display: flex;
+}
+ 
+.section3-midddle-p2-con{
+  padding-left: 10px;
+ 
+}
+ 
+.section3-midddle-p2-con p{
+    padding-top: 5px;
+}
+ 
+.section3-middle-p2-bottom{
+    display: flex;
+}
+ 
+.section3-middle-p3{
+    display: flex;
+    width: 550px;
+    height: 120px;
+    border-bottom: 0.5px solid gray;
+    box-shadow: inset;
+    margin: 10px;
+    padding: 20px;
+}
+ 
+.section3-middle-p3-con{
+  padding-left: 10px;
+ 
+}
+ 
+.section3-middle-p3-con p{
+    padding-top: 5px;
+}
+ 
+.section3-middle-p4{
+    display: flex;
+    height:120px;
+    width:550px;
+    border-bottom: 0.5px solid gray;
+    padding: 20px;
+    margin: 10px;
+   
+}
+ 
+.section3-middle-p4-con{
+    padding-left: 10px;
+   
+}
+ 
+.section3-middle-p4-con p{
+    padding-top: 5px;
+}
+ 
+.section3-right-p1{
+    margin: 15px;
+}
+.section3-right-p2{
+   
+        border: 2px solid gray;
+        width:300px;
+        border-radius: 5px;
+        margin: 15px;
+        /* padding-left: 20px; */
+   
+}
+ 
+.section3-right-p2-div1{
+  background-color: rgb(120, 216, 105);
+  /* width:260px; */
+  margin: 10px;
+}
+ 
+.section3-right-p2-div2{
+    background-color: rgb(85, 162, 222);
+    width: 240px;
+    margin: 10px;
+}
+ 
+.section3-right-p2-div3{
+    background-color: rgb(210, 133, 84);
+    width: 180px;
+    margin: 10px;
+}
+ 
+.section3-right-p2-div4{
+    background-color: rgb(181, 105, 105);
+    width: 110px;
+    margin: 10px;
+}
+ 
+.section3-right-p2 p{
+    padding: 5px;
+    border: 1px solid gray;
+}
+ 
+.section3-right-p3{
+        border: 2px solid gray;
+        width:300px;
+        border-radius: 5px;
+        margin: 15px;
+}
+ 
+.section3-right-p3-bottom{
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 5px;
+}
+ 
+.section3-right-p3-bottom button{
+    padding: 3px;
+    border: 1px solid gray;
+}
+ 
+/* assigning grid */
+ 
+.section3{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    /* grid-template-rows: 2fr 2fr 2fr ; */
+}

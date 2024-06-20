@@ -1,0 +1,212 @@
+header{
+    width:100%;
+    background-color: blue;
+    height: 80px;
+}
+a{
+    text-decoration: none;
+}
+#navbar{
+    display: flex;
+}
+#nav1{
+    display:flex;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    padding-left: 20px;
+}
+#nav1 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.logo-img{
+    padding-top:15px;
+}
+.logo{
+    padding-left: 15px;
+}
+#nav2{
+    padding-top: 30px;
+    padding-left: 100px;
+}
+#nav2 ul{
+    display: inline;
+    list-style-type: none;
+}
+#nav2 li{
+    float: left;
+
+    padding-left: 40px;
+    font-weight: bolder;
+    font-size: larger;
+
+}
+#nav2 a{
+    color: white;
+}
+#nav2 a:hover{
+    color: aqua;
+}
+.float{
+    clear:both;
+}
+#sec1{
+    background-color:blue;
+    display:flex;
+    height: 350px;
+}
+#sec1part1{
+    width: 50%;
+    color: white;
+    padding-left: 80px;
+}
+#sec1part1 h1{
+    font-size: xx-large;
+}
+#sec1-btn{
+    display: flex;
+}
+#sec1-img {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+#sec1-img img{
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+}
+.btn1{
+    margin-top: 10px;
+    background-color: white;
+    color: blue;
+    padding: 15px;
+    border: 1px blue;
+    font-weight: bolder;
+}
+.btn1 a{
+    color: blue;
+}
+.btn1 a:hover{
+    color:aqua;
+}
+
+.btn2{
+    border:1px blue;
+    background-color: blue;
+    
+    padding-top: 12px;
+    font-weight: bolder;
+}
+.btn2 a{
+    color: white;
+}
+.btn2 a:hover{
+    color:aqua;
+}
+
+#sec1part2{
+    width: 50%;
+    padding-left: 60px;
+    margin-right: 20px;
+}
+#sec1part2 img{
+    height: 320px;
+    width: 500px;
+}
+
+/* SECTION-2 */
+#sec2{
+    display:flex;
+    margin-top: 80px;
+    background-color:lightcyan;
+}
+
+#sec2part1{
+    width: 50%;
+    padding-left: 100px;
+    
+}
+
+#sec2part1 img{
+    width:500px;
+    height: 350px;
+}
+#sec2part2{
+    width: 50%;
+    margin-right: 40px;
+}
+#sec2part2{
+    padding-top: 20px;
+}
+#sec2part2 h1{
+    font-size: xx-large;
+    margin-top:0 ;
+    margin-bottom:20px ;
+}
+#sec2part2 p{
+    margin-bottom: 10px;
+}
+#sec2button{
+    background-color:lightsteelblue;
+    padding: 10px;
+}
+.btn3{
+ background-color: blue;
+ color: white;
+ padding: 5px;
+ border-color: blue;
+ font-weight: bold;
+}
+.btn3 a{
+    color: white;
+}
+.btn3 a:hover{
+    color:aqua;
+}
+.btn4{
+    background-color: white;
+    border-color: white;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 10px;
+}
+.btn4 a{
+    color:black;
+}
+.btn4 a:hover{
+    color:blue;
+}
+
+/* SECTION-3 */
+#sec3 p{
+    width:100%;
+    font-size: xx-large;
+}
+
+/* FOOTER */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+    table-layout: fixed;
+}
+table,tr,td{
+
+    border:1px solid black;
+    text-align: center;
+    font-size: large;
+}
+table a{
+    text-decoration: none;
+    color: black;
+}
+table a:hover{
+    color: blue;
+}
+#sec3{
+    text-align: center;
+    font-size: x-large;
+}

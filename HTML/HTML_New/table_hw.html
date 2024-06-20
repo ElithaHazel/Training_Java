@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEW TABLE</title>
+    <style>
+        table{
+            width: 75%;
+            background-color: violet;
+        }
+        table,tr,td,th{
+            text-align: center;
+            border: 1px solid black;
+        }
+        tr:nth-of-type(1) th:nth-of-type(1){
+            font-size: 60px;
+        }
+        tr:nth-of-type(1) td:nth-of-type(2){
+            background-color: yellow;
+        }
+        tr:nth-of-type(1) td:nth-of-type(3){
+            background-color: lightskyblue;
+        }
+        tr:nth-of-type(3) td:nth-of-type(2){
+            background-color: yellow;
+        }
+        tr:nth-of-type(3) td:nth-of-type(3){
+            background-color: yellow;
+        }
+        tr:nth-of-type(4) td:nth-of-type(1){
+            background-color: yellow;
+        }
+        tr:nth-of-type(4) td:nth-of-type(2){
+            background-color: greenyellow;
+        }
+        tr:nth-of-type(5) td:nth-of-type(1){
+            background-color: greenyellow;
+        }
+        tr:nth-of-type(5) td:nth-of-type(2){
+            background-color: lightskyblue;
+        }
+        tr:nth-of-type(6) td:nth-of-type(2){
+            background-color: yellow;
+        }
+        tr:nth-of-type(6) td:nth-of-type(3){
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellpadding="15px">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 am</td>
+                <td rowspan="2">5:00 pm</td>
+                <td>Intro to XML</td>
+                
+            </tr>
+            <tr>
+                <td>Validity:DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="3">Tueday</td>
+                <td>8:00 am</td>
+                <td>11:00 am</td>
+                <td>XPath</td>
+            </tr>
+            <tr>
+                <td>11:00 am</td>
+                <td>2:00 pm</td>
+                <td rowspan="2">XSL Transformatics</td>
+            </tr>
+            <tr>
+                <td>2:00 pm</td>
+                <td>5:00 pm</td>
+                
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00 am</td>
+                <td>12:00 pm</td>
+                <td>XSL Formatting Objects</td>
+            </tr> 
+        </tbody>
+    </table>
+</body>
+</html>

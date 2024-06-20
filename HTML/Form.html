@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Demo</title>
+</head>
+<body>
+    <form>
+        <table align="center">
+            <tr>
+                <td><label for="fName">Enter your First Name:</label></td>
+                <td><input type="text" name="fName" placeholder="First Name" required/></td>
+            </tr>
+            <tr>
+                <td><label for="lName">Enter your Last name</label></td>
+                <td><input type="text" name="lName" placeholder="Last Name" required/></td>
+            </tr>
+            <tr>
+                <td><label for="faName">Enter your Father's Name:</label></td>
+                <td> <input type="text" name="faName" placeholder="Father's Name"/></td>
+            </tr>
+            <tr>
+                <td><label for="lang">Languages known:</label></td>
+                <td>
+                    <input type="checkbox" name="tam" value="Tamil" checked/><label for="tam">Tamil</label>
+                    <input type="checkbox" name="eng" value="English"/><label for="eng">English</label>
+                    <input type="checkbox" name="hin" value="Hindi"/><label for="hin">Hindi</label>
+                    <input type="checkbox" name="tel" value="Telugu"/><label for="tel">Telugu</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="gender">Select Gender:</label></td>
+                <td>
+                    <input type="radio" name="mal" value="Male" checked/><label for="mal">Male</label>
+                    <input type="radio" name="fem" value="Female"/><label for="fem">Female</label>
+                    <input type="radio" name="oth" value="Other"/><label for="oth">Other</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailadd">Enter your Email Id:</label></td>
+                <td><input type="email" name="emailadd" placeholder="Email" required/></td>
+            </tr>
+            <tr>
+                <td><label for="passwd">Enter your Password:</label></td>
+                <td><input type="password" name="passwd" placeholder="Password" required/></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Enter your Phone Number:</label></td>
+                <td><input type="tel" name="phone" placeholder="Phone Number" /></td>
+            </tr>
+            <tr>
+                <td><label for="des">About Yourself:</label></td>
+                <td><textarea rows="10" cols="70" placeholder="Write about yourself"></textarea>
+                <!-- </td><input type="describe" name="des"  /></td> -->
+            </tr>
+            <tr>
+                <td><label for="dob">Enter your Date Of Birth:</label></td>
+                <td><input type="date" name="dob" placeholder="Date Of Birth"/></td>
+            </tr>
+            <tr>
+                <td><label for="pdob">Select Birth Location:</label></td>
+                <td>
+                    <select multiple>
+                        <optgroup label="Tamil Nadu">
+                            <option value="che"selected>Chennai</option>
+                            <option value="cudd">Cuddalore</option>
+                            <option value="ram">Ramanathapuram</option>
+                            <option value="kan">Kanyakumari</option>
+                        </optgroup>
+                        <optgroup label="Telangana">
+                            <option value="hyd" selected>Hyderabad</option>
+                            <option value="kha">Khammam</option>
+                            <option value="sur">Suryapet</option>
+                            <option value="vik">Vikarabad</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td> <label for="plocation">Select Preferred Location:</label></td>
+                <td>
+                    <select>
+                        <optgroup label="Tamil Nadu">
+                            <option value="che"selected>Chennai</option>
+                            <option value="cudd">Cuddalore</option>
+                            <option value="ram">Ramanathapuram</option>
+                            <option value="kan">Kanyakumari</option>
+                        </optgroup>
+                        <optgroup label="Telangana">
+                            <option value="hyd">Hyderabad</option>
+                            <option value="kha">Khammam</option>
+                            <option value="sur">Suryapet</option>
+                            <option value="vik">Vikarabad</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="profile">Upload Your Picture:</label></td>
+                <td><input type="file" name="profile"/></td>
+            </tr>
+            <tr>
+                <td> <label for="fcolor">Choose Favouritre Colour:</label></td>
+                <td><input type="color" name="fcolor"/></td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="Cancel"/></td>
+                <td><input type="submit" value="Submit"/></td>
+            </tr>
+    </table>
+    </form>
+</body>
+</html>

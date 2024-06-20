@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #t1{ 
+            width:50%;
+            padding: 5px;
+        }
+        #t2{
+            width:60%;
+            
+        }
+        
+        table,th,td{
+            border:1px solid;
+            padding: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h4 align="center">TABLE-1</h4>
+    <table id="t1">
+        <caption>Student Details</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">S.No</th>
+                <th rowspan="2">SuperSet Id</th>
+                <th colspan="2">Full Name</th>
+                <th rowspan="2">11th Feb 2024</th>
+            </tr>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+
+
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>1122</td>
+                <td>Elita</td>
+                <td>Hazel</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>1133</td>
+                <td>Sana</td>
+                <td>Mukbul</td>
+                <td>Absent</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1144</td>
+                <td>Pallavi</td>
+                <td>Goenka</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1155</td>
+                <td>Nikhil</td>
+                <td>Rathod</td>
+                <td>Present</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>1166</td>
+                <td>Elita</td>
+                <td>Hazel</td>
+                <td>Present</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td bgcolor="violet">Total</td>
+                <td colspan="4">One Absent & other Prsent</td>
+            </tr>
+        </tfoot>
+    </table>
+    <h4 align="center">TABLE-2</h4>
+    <table id="t2">
+        <caption>Nested Tables</caption>
+        <thead>
+            <th>Header Column 1</th>
+            <th>Header Column 2</th>
+            <th>Header Column 3</th>
+            <th>Header Column 4</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 2 Item 1</td>
+                <td>Row 2 Item 2</td>
+                <td rowspan="2">Row 2 Nested Table 1
+                    <table border="1" align="center">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 3 Header</th>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 2 Item 4 Second Line</td>
+            </tr>
+            <tr>
+                <td >Row 3 Nested Table 2
+                    <table border="1" align="center">
+                        <tr>
+                            <th>Row 1 Header</th>
+                            <td>Item</td>
+                        </tr>
+                        <tr>
+                            <th>Row 2 Header</th>
+                            <td>Item</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>Row 3 Item 2</td>
+                <td rowspan="2">Row 3 Item 3</td>
+            </tr>
+            <tr>
+                <td>Row 4 Item 1</td>
+                <td>Row 4 Item 2</td>
+                <td>Row 4 Item 3</td>
+            </tr>
+            <tr>
+                <td colspan="4">Row 5 Last Row Outer Table</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

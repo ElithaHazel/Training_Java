@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS</title>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Internal CSS -->
+    <style>
+        h1{
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Class</h1>
+    <div class="container">
+        <!-- div -> 1 -->
+        <div class="box-1">
+            <h1 style="color: red;">Hello World!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta, deserunt ducimus quasi natus aspernatur? Quibusdam temporibus odit aliquid illum consectetur fuga, quam expedita adipisci nam fugit quas tempore quisquam.</p>
+        </div>
+        <!-- div -> 2 -->
+        <div class="box-2">
+            <h1 style="color:darkmagenta;">Amazing World!!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta, deserunt ducimus quasi natus aspernatur? Quibusdam temporibus odit aliquid illum consectetur fuga, quam expedita adipisci nam fugit quas tempore quisquam.</p>
+            <!-- <a href="https://www.google.co.in/" target="_blank">Click here to read more...</a> -->
+            <a class="button" href="">Click here to read more...</a>
+        </div>
+        <!-- div -> 3 -->
+        <div class="categories">
+            <h2>Categories</h2>
+            <ul>
+                <li><a href="#">Category 1</a></li>
+                <li><a href="#">Category 2</a></li>
+                <li><a href="#">Category 3</a></li>
+                <li><a href="#">Category 4</a></li>
+            </ul>
+        </div>
+        <br/>
+        <form class="my-form">
+            <div class="form-group">
+                <label for="Name">First Name:</label>
+                <input id="Name" type="text" name="firstName">
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+            <input class="button" type="submit" id="button" name="submit">
+            <br/>
+        </form>
+        <!-- div -> 4 -->
+        <div class="block">
+            <h3>Heading 1</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+        </div>
+        <!-- div -> 5 -->
+        <div class="block">
+            <h3>Heading 2</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+        </div>
+        <!-- div -> 6 -->
+        <div class="block">
+            <h3>Heading 3</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+        </div>
+        <!-- div -> 7 -->
+        <div class="block">
+            <h3>Heading 4</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+        </div>
+        <!-- div -> 8 -->
+        <div class="block">
+            <h3>Heading 5</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+        </div>
+
+        <!-- to remove the float property -->
+        <div class="flt"></div>
+        <div><p>Hello ****</p></div>
+        <!-- <div class="bar"> -->
+        <!-- using id -->
+            <div id="main-block">
+                <h3>MAIN Section</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+            </div>
+            
+            <div id="side-bar">
+                <h3>SIDE Section</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+            </div>
+            <!-- <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ullam facilis magni? Enim, ipsum odit nihil, vel itaque, deserunt laborum quidem modi assumenda tempora atque veritatis sed. Cumque, omnis dolorum.</p>
+            </div> -->
+        <!-- </div> -->
+        <div class="flt"></div>
+        <div class="p-box">
+            <h1>Hello World!!</h1>
+            <h2>Colorful World!!</h2>
+        </div>
+        <div class="stickyFixedContainer">
+            <a href="" class="button fix-me">fixed based on viewer's scroll position</a>
+            <a href="" class="button stick-me">A Sticky element is relative to the document flow untill a defined scroll position is reached,at which point it behaves like a fixed element within its direct parent.</a>
+            <!-- An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). -->
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque placeat facere minima quidem cupiditate reprehenderit porro illum iusto accusantium necessitatibus, incidunt tempore libero non provident ipsam, ipsum dicta earum facilis! Doloremque pariatur harum perspiciatis tenetur. Ut itaque, nobis rerum quis delectus blanditiis et quia adipisci placeat iure reiciendis sunt dolor fugiat beatae, veniam perspiciatis doloribus dicta quam, suscipit dolore at ab in? Assumenda, natus accusamus? Recusandae nesciunt earum, unde enim nulla dolores iste maiores. Architecto eaque possimus sequi, iure aliquid officia id corporis quam soluta nam perferendis quos omnis in quaerat est provident libero tempora cum fugit minus? Assumenda provident placeat animi, molestiae qui hic at vitae ipsa, blanditiis ipsam commodi tempore asperiores est voluptatum delectus et nisi ea dolorem repudiandae quod possimus doloribus error temporibus dolores! Suscipit minus repellendus deleniti reiciendis tenetur aliquid, optio amet molestias dolore dicta itaque et, incidunt quisquam fuga officia aspernatur asperiores consequatur placeat magni dolorem odio sequi? Ea eaque aspernatur quibusdam. Commodi fuga laboriosam eaque consequatur, non dicta impedit odio sint quis minima. Ea cumque iste assumenda quibusdam atque accusantium facere vel a? Rerum culpa modi exercitationem odio? Magnam sint quos nulla placeat sapiente, nemo impedit quidem nobis minima explicabo facilis temporibus consequuntur nihil omnis cumque natus aliquam tempora veritatis voluptate doloremque ex odio quibusdam quod! Iusto animi magnam cupiditate ad hic illo corporis fugiat provident nam, nulla voluptate laudantium velit commodi culpa, esse vel. Praesentium assumenda dolorem sint ipsum eos. Magni explicabo cumque libero dolorum voluptas quo provident minima aut reiciendis fugiat quas sapiente quod obcaecati soluta suscipit, aspernatur non beatae, repudiandae, temporibus alias. Velit in incidunt doloremque, fuga sit doloribus labore earum, consequuntur enim iste distinctio assumenda esse voluptate aperiam harum voluptatum. Aliquam maiores obcaecati sunt eveniet. Harum eius magni, praesentium ratione, optio voluptatum asperiores minima sed quaerat illum eaque officiis placeat.</p>
+        </div>
+        <div class="my-list">
+            <ul>
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+                <li>List Item 4</li>
+                <li>List Item 5</li>
+                <li>List Item 6</li>
+                <li>List Item 7</li>
+                <li>List Item 8</li>
+                <li>List Item 9</li>
+                <li>List Item 10</li>
+                <li>List Item 11</li>
+                <li>List Item 12</li>
+                <li>List Item 13</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
